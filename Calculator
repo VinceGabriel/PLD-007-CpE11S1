@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	//create a c++ program that applies MDAS 
+	int a;
+	int b;
+	char c;
+
+	cout<<"Enter 2 numbers:";
+	cin>> a>>c>>b;
+
+	cout<<"Enter type:";
+
+	
+	int sum;
+	int difference;
+	int quotient;
+	int product;
+	
+	switch(c)
+	{
+		case '+':
+			sum = a+b;
+			cout<< sum;
+		break; 
+		
+		case '-':
+			difference = a-b;
+			cout<< difference;
+		break;
+			
+		case '/':
+			quotient = a/b;
+			cout<< quotient;
+		break;
+		
+		case '*':
+			product = a*b;
+			cout<< product;
+		break;
+		
+		default:
+			{
+				cout<<"error";
+				break;
+				
+			}	
+	}
+	return 0;
+}
