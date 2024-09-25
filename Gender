@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//create a c++ to determine if gender is male or female
+	char c;
+	
+	cout <<"Enter the character";
+	cin>> c;
+		
+	switch(c)
+	{
+		case 'F':
+			cout<<"You are a Woman";
+		break;
+		
+		case 'M':
+			cout<<"You are a Man";
+		break;
+		
+		default:
+			{
+				cout<<"Your are a Non binary";
+			break;
+			}
+	}
+	return 0;
+}
