@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Initialize variables
+    int total = 0;
+    int gradeCounter = 1;
+    int grade;
+
+    cout << "Welcome to the class grade average calculator!" << endl;
+
+    // Loop to get grades from the user
+    while (gradeCounter <= 10) {
+        cout << "Please enter grade " << gradeCounter << " (0-100): ";
+        cin >> grade;
+
+        if (grade >= 0 && grade <= 100) {
+            total += grade;  
+            gradeCounter++;   
+        } else {
+            cout << "Oops! That grade is not valid. Please enter a number between 0 and 100." << endl;
+        }
+    }
+
+    double classAverage = static_cast<double>(total) / 10;
+
+    cout << "\nGreat job! The class average is: " << classAverage << endl;
+
+    return 0;
+}
