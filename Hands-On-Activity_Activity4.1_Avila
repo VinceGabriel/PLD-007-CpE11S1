@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	float Physics, Chemistry, Biology, Mathematics, Computer;
+	
+	cout << "Enter marks for Physics";
+	cin >> Physics;
+	cout << "Enter marks for Chemistry";
+	cin >> Chemistry;
+	cout << "Enter marks for Biology";
+	cin >> Biology;
+	cout << "Enter marks for Mathematics";
+	cin >> Mathematics;
+	cout << "Entre marks for Computer";
+	cin >> Computer;
+	
+	float total = Physics + Chemistry + Biology + Mathematics + Computer;
+	float percentage = (total / 500) * 100;
+	
+	cout << "Percentage: " << percentage << "%" << endl;
+	
+	int GradeRange = static_cast<int>(percentage / 10);
+	
+	char grade;
+	
+	switch (GradeRange) {
+		case 10:
+		case 9:
+			grade = 'A';
+			break;
+		case 8:
+			grade = 'B';
+			break;
+		case 7:
+			grade = 'C';
+			break;
+		case 6:
+			grade = 'D';
+			break;
+		case 5:
+			grade = 'E';
+			break;
+		default:
+			grade = 'F';
+			break;
+	}
+	
+	cout << "Grade: " << grade << endl;
+	
+	return 0;
+}
