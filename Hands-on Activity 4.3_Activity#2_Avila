@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	string Block1="R N B Q K B N R";
+	string Block2="P P P P P P P P";
+	string Block3="               ";
+	string Block4="               ";
+	string Block5="               ";
+	string Block6="               ";
+	string Block7="P P P P P P P P";
+	string Block8="R N B Q K B N R";
+	
+	cout<<Block1<<endl;
+	cout<<Block2<<endl;
+	cout<<Block3<<endl;
+	cout<<Block4<<endl;
+	cout<<Block5<<endl;
+	cout<<Block6<<endl;
+	cout<<Block7<<endl;
+	cout<<Block8<<endl;
+	
+	return 0;
+}
