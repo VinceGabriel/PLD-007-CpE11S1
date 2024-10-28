@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int day_index;
+    const char *days_of_week[] = {
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+    };
+
+    printf("Enter a number (0-6): ");
+    scanf("%d", &day_index);
+
+    if (day_index >= 0 && day_index < 7) {
+        printf("%s\n", days_of_week[day_index]);
+    } else {
+        printf("Error, no such day.\n");
+    }
+
+    return 0;
+}
