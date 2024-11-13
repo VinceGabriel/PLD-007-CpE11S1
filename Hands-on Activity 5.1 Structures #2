@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+bool multiple(int num, int x) 
+{
+  
+    return (num % x == 0);
+}
+
+int main() {
+    int num, x;
+
+    cout << "Enter an integer: ";
+    cin >> num;
+    cout << "Enter the integer x to check if it's a divisor: ";
+    cin >> x;
+
+    if (multiple(num, x)) {
+        cout << num << " is a multiple of " << x << endl;
+    } else {
+        cout << num << " is NOT a multiple of " << x << endl;
+    }
+
+    return 0;
+}
