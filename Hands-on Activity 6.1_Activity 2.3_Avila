@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+float dollarsToPesos(float dollars, float rate) { return dollars * rate; }
+float pesosToDollars(float pesos, float rate) { return pesos / rate; }
+
+int main() 
+{
+    float amount, rate;
+    char choice;
+
+    cout << "Convert (D)ollars to Pesos or (P)esos to Dollars? ";
+    cin >> choice;
+
+    cout << "Enter exchange rate: ";
+    cin >> rate;
+
+    if (choice == 'D' || choice == 'd') {
+        cout << "Enter amount in Dollars: ";
+        cin >> amount;
+        cout << amount << " USD = " << dollarsToPesos(amount, rate) << " Pesos" << endl;
+    } else if (choice == 'P' || choice == 'p') {
+        cout << "Enter amount in Pesos: ";
+        cin >> amount;
+        cout << amount << " Pesos = " << pesosToDollars(amount, rate) << " USD" << endl;
+    }
+
+    return 0;
+    
+}
