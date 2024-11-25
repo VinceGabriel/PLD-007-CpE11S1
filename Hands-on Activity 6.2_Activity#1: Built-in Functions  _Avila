@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int surfaceArea(int s) 
+{
+    return 6 * s * s;  
+}
+
+int main() 
+{
+    int side;
+    cout << "Enter side length of the cube: ";
+    cin >> side;
+    
+    cout << "Surface area of the cube is: " << surfaceArea(side) << endl;
+    
+    return 0;
+    
+}
